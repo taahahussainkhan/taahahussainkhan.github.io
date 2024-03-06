@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+.navbar{
+    background: #272829;
+    padding: 14px 20px;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.1); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #61677A;
+    /* transition: all .3s; */
+}
+.navbar h1{
+    font-size: 1.5rem;
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    background: inherit;
+}
+.navbar ul{
+    background: inherit;
+    display: flex;
+}
+.navbar ul li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    list-style: none;
+    margin: 5px 10px;
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
