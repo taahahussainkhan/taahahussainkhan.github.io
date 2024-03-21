@@ -17,14 +17,20 @@ export default function Navbar() {
         <div className='work'>
             <h1>Projects</h1>
             <ul className='projects'>
-                <li className="box"><h2>Project 1</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ducimus quia sint odit! Perferendis iste omnis maiores nam illo unde non hic suscipit. Fuga natus odit facilis ratione magnam voluptate.</p>
-                    <button className='btn'>Repo Link</button>
-                </li>
-                <li className="box"><h2>Project 2</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ducimus quia sint odit! Perferendis iste omnis maiores nam illo unde non hic suscipit. Fuga natus odit facilis ratione magnam voluptate.</p>
-                    <button className='btn'>Repo Link</button>
-                </li>
+            {repos.length >= 37 && ( 
+                    <li className="box">
+                        <h2>{repos[25].name}</h2> {/* Displaying the 2nd repository */}
+                        <p>{repos[21].description}</p>
+                        <a href={repos[21].html_url} className='btn'>Repo Link</a>
+                    </li>
+                )}
+                {repos.length >= 25 && ( 
+                    <li className="box">
+                        <h2>{repos[19].name}</h2> {/* Displaying the 2nd repository */}
+                        <p>{repos[19].description}</p>
+                        <a href={repos[23].html_url} className='btn'>Repo Link</a>
+                    </li>
+                )}
                 {repos.length >= 25 && ( 
                     <li className="box">
                         <h2>{repos[23].name}</h2> {/* Displaying the 2nd repository */}
